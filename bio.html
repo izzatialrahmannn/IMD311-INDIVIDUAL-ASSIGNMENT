@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <title>Biography</title>
+    </head>
+
+    <body>
+
+      <style>
+        body {
+          background-image: url(Image/5f8a3e23777f33aa8cee0392c3c9fca9.jpg);
+          background-repeat: no-repeat;
+         background-attachment: fixed;  
+         background-size: cover;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="bio.html">About Me</a> 
+    <a href="education.html">Education</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<body>
+
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Image/ABOUT ME.jpg" style="width:100%">
+  </div>
+  
+  </div>
+  <br>
+  
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
+  </body>
+
+        <h1 style="text-align:center;"><font color="#504C2F"><h1>Get To Know Me</h1></font></h1> 
+     
+      <meta name="" content="width=device-width, initial-scale=1">
+
+       <center> <style>
+        .container {
+          position: relative;
+          width: 50%;
+        }
+        
+        .image {
+          opacity: 1;
+          display: block;
+          width: 100%;
+          height: auto;
+          transition: .5s ease;
+          backface-visibility: hidden;
+        }
+        
+        .middle {
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        
+        .container:hover .image {
+          opacity: 0.3;
+        }
+        
+        .container:hover .middle {
+          opacity: 1;
+        }
+        
+        .text {
+          background-color: #F5E740;
+          color: white;
+          font-size: 16px;
+          padding: 16px 32px;
+        }
+        </style>
+        </head>
+
+        <body>
+        
+        <center><div class="container">
+          <img src="Image/Image 1.jpg" alt="Avatar" class="image" style="width: 50%">
+          <div class="middle">
+            <div class="text">ABOUT MYSELF</div>
+          </div>
+        </div>
+       
+        <style>
+            table, th, td {
+              border: 1px solid gold;
+            }
+            </style></center>
+
+
+            <body>
+    
+            <table style="width:70%">
+            <tr>
+               <td><b>Full Name</b></td>
+                <td><b>Gender</b></td>
+                <td><b>Age</b></td>
+                <td><b>Race</b></td>
+                <td><b>Date of Birth</b></td>    
+                <td><b>Place of Residence</b></td>
+                <td><b>Origin</b></td>
+                <td><b>Hobby</b></td>
+                
+                
+             </tr>
+               <tr>
+                <td>Nurizzati Binti Abdul Rahman</td>
+                <td>Female</td>
+                <td>21 Years Old</td>
+                <td>Malay</td>
+                <td>30TH August 2002</td>
+                <td>Klang, Selangor</td>
+                <td>Klang, Selangor</td>
+                <td>Watching Movies</td>
+            
+               </tr>
+            </table></center>
+
+
+
+        <h1 style="text-align:center;">I am a nature lover &#128151; </h1>
+        <p style="text-align:center;">It has been shown over and over again that spending time in nature 
+        may improve psychological wellness by lowering levels of feelings
+        such as despair, anxiety, tension, and rage. The presence of nature in
+        my life has the potential to boost my overall sense of well-being and 
+        the quality of many facets of my existence.</p>
+
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+          
+          .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+          }
+          
+          /* Clearfix (clear floats) */
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <div class="row">
+            <div class="column">
+              <img src="Image/Horse ride.jpeg" alt="Snow" style="width:70%">
+            </div>
+            <div class="column">
+              <img src="Image/Image 2.jpeg" alt="Forest" style="width:70%">
+            </div>
+            <div class="column">
+              <img src="Image/Taman.jpeg" alt="Mountains" style="width:70%">
+            </div>
+          </div>
+    </body>
+
+</html>
